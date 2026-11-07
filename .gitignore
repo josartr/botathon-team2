@@ -2,3 +2,5 @@
 __pycache__/
 .streamlit/
 *.pyc
+node_modules/
+dist/

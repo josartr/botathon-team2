@@ -1,17 +1,21 @@
 # Cada hora cuenta
 
-MVP de planificación asistencial para el desafío Botathon 2026. La aplicación carga el reporte anonimizado de dotación, valida su estructura, aplica reglas editables y entrega una vista ejecutiva nacional con profundización por instituto, área, cargo y profesional.
+MVP de planificación asistencial para el desafío Botathon 2026, construido con React, TypeScript y Vite. La interfaz carga el reporte anonimizado de dotación, valida su estructura, aplica reglas editables y entrega una vista ejecutiva nacional con profundización por instituto, área, mes y profesional.
 
 ## Ejecutar localmente
 
 ```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-streamlit run app.py
+npm install
+npm run dev
 ```
 
-La aplicación usa `Nac-Base-contratos-x-mes.csv` como dataset inicial. También permite cargar otro CSV BUK desde la barra lateral, que representa el archivo depositado por Blue Prism después de su recepción y validación.
+Para validar el build de producción:
+
+```powershell
+npm run build
+```
+
+El reporte inicial está en `public/data/Nac-Base-contratos-x-mes.csv`. También se puede cargar otro CSV BUK desde la interfaz, representando el archivo depositado por Blue Prism después de su recepción y validación.
 
 ## Flujo propuesto con Blue Prism
 
